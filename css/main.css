@@ -1,0 +1,26 @@
+/* Configuracion inicial */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Contenido del Layout */
+header {
+    height: 25rem;
+    background-color: coral;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
