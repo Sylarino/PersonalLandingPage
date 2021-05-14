@@ -1,3 +1,11 @@
+/* Variables */
+
+:root {
+    --primary-color: rgb(202, 74, 74);
+    --secundary-color: rgb(233, 209, 72);
+    --terciary-color: 
+}
+
 /* Configuracion inicial */
 * {
     box-sizing: border-box;
@@ -11,16 +19,60 @@ html {
 
 /* Contenido del Layout */
 header {
-    height: 25rem;
-    background-color: coral;
+    height: 35rem;
+    background:linear-gradient(50deg, var(--primary-color), var(--secundary-color));
 }
 
-.nav-bar ul {
+.nav-bar > ul {
     display: flex;
     justify-content: space-between;
+    
 }
 
-.nav-bar li {
+.nav-bar > ul > li {
+    font-size: 3rem;
     list-style: none;
+    justify-content: center;
+}
+
+.nav-bar .item-1 {
+    background-color:var(--primary-color);
+}
+
+.nav-bar .item-2 {
+    background-color:var(--secundary-color);
+}
+
+nav > ul > li > ul {
+    display:none;
+    position: absolute;
+    text-align: left;
+}
+
+.nav-bar > ul > li:hover > ul {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    list-style: none;
+    background-color: var(--primary-color);
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(50deg, var(--primary-color), var(--secundary-color));
+}
+
+.section-main {
+    display: flex;
+    flex-flow: column;
+}
+
+.cards {
+    background-color: palevioletred;
+    margin: 2rem;
+}
+
+.cards p {
+    font-size: 4rem;
 }
 
