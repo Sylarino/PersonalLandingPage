@@ -23,16 +23,15 @@ header {
     background:linear-gradient(50deg, var(--primary-color), var(--secundary-color));
 }
 
+/* Barra de Navegación Mobile */
+
 .nav-bar > ul {
-    display: flex;
-    justify-content: space-between;
-    
+    display: flex;    
 }
 
 .nav-bar > ul > li {
     font-size: 3rem;
     list-style: none;
-    justify-content: center;
 }
 
 .nav-bar .item-1 {
@@ -50,17 +49,44 @@ nav > ul > li > ul {
 }
 
 .nav-bar > ul > li:hover > ul {
-    display: flex;
-    flex-flow: column;
     color: white;
     list-style: none;
     background-color: var(--primary-color);
 }
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .toggle {
+    order: 1;
+} */
 
 main {
-    height: 100vh;
+    display: flex;
     background: linear-gradient(50deg, var(--primary-color), var(--secundary-color));
 }
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+/* Fin de estilos barra de navegación mobile */
 
 .section-main {
     display: flex;
@@ -70,6 +96,8 @@ main {
 .cards {
     background-color: palevioletred;
     margin: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 .cards p {
