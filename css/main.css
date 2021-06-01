@@ -3,7 +3,7 @@
 :root {
     --primary-color: rgb(202, 74, 74);
     --secundary-color: rgb(233, 209, 72);
-    --terciary-color: 
+
 }
 
 /* Configuracion inicial */
@@ -15,46 +15,60 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Lexend Mega', sans-serif;
 }
 
 /* Contenido del Layout */
 header {
-    height: 35rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    flex-direction: column;
+    justify-content: center;
+    height: 334px;
     background:linear-gradient(50deg, var(--primary-color), var(--secundary-color));
+    padding: 0;
+    margin: 0;
 }
 
 /* Barra de Navegación Mobile */
+.nav--navegation {
+    min-width: 320px;
+    padding: 0;
+    margin: 0;
 
-.nav-bar > ul {
+}
+.nav--navegation  > ul {
     display: flex;    
 }
 
-.nav-bar > ul > li {
+.nav--navegation  > ul > li {
     font-size: 3rem;
     list-style: none;
 }
 
-.nav-bar .item-1 {
+.nav--navegation .item-1 {
     background-color:var(--primary-color);
 }
 
-.nav-bar .item-2 {
+.nav--navegation .item-2 {
     background-color:var(--secundary-color);
 }
-
+/* 
 nav > ul > li > ul {
-    display:none;
+    display: none;
     position: absolute;
     text-align: left;
 }
 
-.nav-bar > ul > li:hover > ul {
+.nav--navegation > ul > li:hover > ul {
     color: white;
     list-style: none;
     background-color: var(--primary-color);
-}
+} */
 .menu li {
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 15px 5px;
     white-space: nowrap;
 }
@@ -66,13 +80,12 @@ nav > ul > li > ul {
     align-items: center;
 }
 
-/* .toggle {
-    order: 1;
-} */
-
 main {
     display: flex;
+    min-width: 320px;
     background: linear-gradient(50deg, var(--primary-color), var(--secundary-color));
+    padding: 0;
+    margin: 0;
 }
 
 .item {
@@ -83,24 +96,30 @@ main {
 }
 
 .item.active {
-    display: block;
+    display: flex;
 }
 
 /* Fin de estilos barra de navegación mobile */
 
-.section-main {
+.main_section--cards {
     display: flex;
     flex-flow: column;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
 }
 
-.cards {
+.main_section--cards .cards {
     background-color: palevioletred;
-    margin: 2rem;
-    padding: 1rem;
     border-radius: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cards p {
     font-size: 4rem;
+    margin-top: 25px;
 }
 
