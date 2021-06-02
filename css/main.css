@@ -3,7 +3,10 @@
 :root {
     --primary-color: rgb(202, 74, 74);
     --secundary-color: rgb(233, 209, 72);
-
+    --gradient-orange-red: linear-gradient(50deg, var(--primary-color), var(--secundary-color));
+    --off-white: #FAF8F7;
+    --off-white: #ffffff;
+    --off-white: #FAF8F7;
 }
 
 /* Configuracion inicial */
@@ -26,18 +29,32 @@ header {
     min-width: 320px;
     flex-direction: column;
     justify-content: center;
-    height: 334px;
+    height: auto;
     background:linear-gradient(50deg, var(--primary-color), var(--secundary-color));
     padding: 0;
     margin: 0;
+    font-family: 'Saira', sans-serif;
+    color: var(--off-white);
 }
 
+header h2 {
+    font-size: 2.4rem;
+}
+
+.header-logo--container img {
+    width: 70%;
+    min-width: 215px;
+    min-height: 200px;
+    max-width: 431px;
+    max-height: 400px;
+    background-size: cover;
+}
 /* Barra de Navegación Mobile */
 .nav--navegation {
     min-width: 320px;
     padding: 0;
     margin: 0;
-
+    background: var(--gradient-orange-red);
 }
 .nav--navegation  > ul {
     display: flex;    
@@ -100,6 +117,12 @@ main {
 }
 
 /* Fin de estilos barra de navegación mobile */
+.cards {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 200px;
+}
 
 .main_section--cards {
     display: flex;
@@ -119,7 +142,7 @@ main {
 }
 
 .cards p {
-    font-size: 4rem;
+    font-size: 1.8rem;
     margin-top: 25px;
 }
 
