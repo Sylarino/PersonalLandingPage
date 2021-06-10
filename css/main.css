@@ -4,9 +4,9 @@
     --primary-color: rgb(202, 74, 74);
     --secundary-color: rgb(233, 209, 72);
     --gradient-orange-red: linear-gradient(50deg, var(--primary-color), var(--secundary-color));
-    --off-white: #FAF8F7;
-    --off-white: #ffffff;
-    --off-white: #FAF8F7;
+    --gradient-red-orange: linear-gradient(50deg, var(--secundary-color), var(--primary-color));
+    --off-white: #faeded;
+    --white: #ffffff;
 }
 
 /* Configuracion inicial */
@@ -49,6 +49,48 @@ header h2 {
     max-height: 400px;
     background-size: cover;
 }
+
+.header--container {
+    position: relative;
+    width: 100%;
+}
+
+.header--container h1 {
+    position: absolute;
+    left: calc(40% - 60px);
+    top: calc(50% - 30%);
+    font-weight: bolder;
+    line-height: 1.6rem;
+}
+
+.header--container h2 {
+    position: absolute;
+    left: calc(40% - 60px);
+    top: calc(80% - 20%);
+}
+
+.header--container h3 {
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(50% - 10%);
+    font-size: 1.3rem;
+}
+
+.luna {
+    position: absolute;
+    left: calc(40% - 20px);
+    top: calc(50% - 90px);    
+    min-width: 150px;
+    min-height: 150px;
+    /* height: 70%;
+    width: calc(70% - 50%); */
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 10%;
+    border-radius: 50%;
+    -moz-box-shadow: 30px 10px 0 #474140;
+    -webkit-box-shadow: 30px 10px 0 #927f7f;
+    box-shadow: 30px 10px 0 #e0c9c9;
+}
 /* Barra de Navegación Mobile */
 .nav--navegation {
     min-width: 320px;
@@ -90,6 +132,11 @@ nav > ul > li > ul {
     white-space: nowrap;
 }
 
+.menu li a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--off-white);
+}
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +157,15 @@ main {
     text-align: center;
     order: 3;
     display: none;
+    color: var(--off-white);
+}
+
+.item-1 {
+    background: var(--gradient-red-orange);    
+}
+
+.item-2 {
+    background: var(--gradient-orange-red);    
 }
 
 .item.active {
@@ -117,8 +173,17 @@ main {
 }
 
 /* Fin de estilos barra de navegación mobile */
+
+/* Sección de About Me */
+
+.main_section--cards {
+    margin-top: 40px;
+}
+
 .cards {
+    position: relative;
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
     min-height: 200px;
@@ -145,4 +210,27 @@ main {
     font-size: 1.8rem;
     margin-top: 25px;
 }
+
+.paralelogramo {
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 10%);
+    width: 150px; 
+    height: 40px; 
+    background: #5ab19b;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    
+    text-align: center;
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+    color: var(--off-white);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+
+
 
