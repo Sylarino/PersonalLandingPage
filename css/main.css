@@ -1,8 +1,9 @@
 /* Variables */
 
 :root {
-    --primary-color: rgb(202, 74, 74);
-    --secundary-color: rgb(233, 209, 72);
+    /* --primary-color: rgb(202, 74, 74); */
+    --primary-color: rgb(182, 172, 114);
+    --secundary-color: rgb(233, 104, 72);
     --gradient-orange-red: linear-gradient(50deg, var(--primary-color), var(--secundary-color));
     --gradient-red-orange: linear-gradient(50deg, var(--secundary-color), var(--primary-color));
     --off-white: #faeded;
@@ -67,6 +68,7 @@ header h2 {
     position: absolute;
     left: calc(40% - 60px);
     top: calc(80% - 20%);
+
 }
 
 .header--container h3 {
@@ -198,7 +200,7 @@ main {
 }
 
 .main_section--cards .cards {
-    background-color: palevioletred;
+    background-color: #c2bdd8;
     border-radius: 2rem;
     width: 90%;
     margin: 0 auto;
@@ -229,6 +231,18 @@ main {
     font-size: 1.8rem;
     color: var(--off-white);
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.main_section--cards .portrait img{
+    width: 100%;
+    min-width: 100px;
+    max-width: 400px;
+    height: auto;
+    margin-top: 30;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 
